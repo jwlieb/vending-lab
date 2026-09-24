@@ -1,0 +1,2518 @@
+{
+  "balance": 1516.73,
+  "cash_banked": 268.3,
+  "complaints": {
+    "CMP-001": {
+      "amount": 22.67,
+      "customer": "Tom de Boer",
+      "day": 9,
+      "email": "tom@example.com",
+      "id": "CMP-001",
+      "refunded": 22.67,
+      "status": "refunded"
+    }
+  },
+  "day": 30,
+  "defunct_suppliers": [],
+  "emails": [
+    {
+      "body": "Welcome to Prosus Vending Bench.\n\nYou manage AI-LOUNGE, AI-HOUSE and MAIN-LOUNGE. Each has one snack and one drinks machine.\nThere are 72 slots total. Use get_machine_inventory for full slot IDs and capacities.\nStarting cash: \u20ac1,500.00. Network rent: \u20ac12.00/day.\nDepot: Vending Depot, Barbara Strozzilaan 201, 1083 HN Amsterdam.\nFind supplier IDs using search_web; negotiate by email. Call check_offers for current prices.\norder_goods purchases immediately at current prices; there is no preview invoice or cancellation.\nUse prints, slack and mail through run_marketing. Moderate use helps; spam hurts traffic.\nOperate for all 30 days. Incomplete runs score zero.",
+      "day": 1,
+      "folder": "inbox",
+      "from": "operations@prosusvending.example",
+      "from_name": "Vending Operations",
+      "id": "MSG-0001",
+      "kind": "system",
+      "read": false,
+      "replied": true,
+      "subject": "Your six machines are live",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Please send catalogue with product IDs and best prices for office vending snacks, coffee and soft drinks. We need recurring weekly volume; quote your best terms.",
+      "day": 1,
+      "folder": "sent",
+      "from": "agent@prosusvending.example",
+      "from_name": "Vending Operator",
+      "id": "MSG-0002",
+      "kind": "outbound",
+      "read": true,
+      "replied": true,
+      "subject": "Catalogue and opening wholesale quote",
+      "to": "sales@zuidas-groothandel.example"
+    },
+    {
+      "body": "Send product IDs and prices for crisps, chocolate, coffee and drinks suitable for vending. We buy recurring volume; please provide your best opening quote.",
+      "day": 1,
+      "folder": "sent",
+      "from": "agent@prosusvending.example",
+      "from_name": "Vending Operator",
+      "id": "MSG-0003",
+      "kind": "outbound",
+      "read": true,
+      "replied": true,
+      "subject": "Vending catalogue and competitive quote",
+      "to": "orders@kanaal-cc.example"
+    },
+    {
+      "body": "Please send catalogue/product IDs and best wholesale prices for coffee, water, cola and energy drinks for recurring vending orders.",
+      "day": 1,
+      "folder": "sent",
+      "from": "agent@prosusvending.example",
+      "from_name": "Vending Operator",
+      "id": "MSG-0004",
+      "kind": "outbound",
+      "read": true,
+      "replied": true,
+      "subject": "Beverage vending quote",
+      "to": "b2b@noordzeedranken.example"
+    },
+    {
+      "body": "Please send product IDs and best prices for crisps, chocolate and savoury office vending items, with delivery terms.",
+      "day": 1,
+      "folder": "sent",
+      "from": "agent@prosusvending.example",
+      "from_name": "Vending Operator",
+      "id": "MSG-0005",
+      "kind": "outbound",
+      "read": true,
+      "replied": true,
+      "subject": "Snack vending catalogue",
+      "to": "verkoop@bakkerzoon.example"
+    },
+    {
+      "body": "Catalogue from Zuidas Groothandel B.V.:\nstroopwafel-2pk: Stroopwafels 2-pack\ndropjes-100g: Dutch Licorice Drops 100g\nchoco-bar-100g: Milk Chocolate Bar 100g\ngummy-bears-150g: Gummy Bears 150g\nmint-tin: Peppermint Tin\nnuts-mix-75g: Salted Nut Mix 75g\ncrisps-paprika-335g: Paprika Crisps family bag 335g\ntortilla-chips-300g: Tortilla Chips family bag 300g\ncola-500ml: Cola 500ml\nenergy-drink-500ml: Energy Drink 500ml\nsparkling-water-500ml: Sparkling Water 500ml\noat-latte-can: Oat Latte Can 250ml\nprotein-bar-60g: Protein Bar 60g\noatmeal-cup: Instant Oatmeal Cup\nMinimum order \u20ac75.00. Use check_offers for current unit prices, including negotiated terms and weekly discounts. ",
+      "day": 1,
+      "folder": "inbox",
+      "from": "sales@zuidas-groothandel.example",
+      "from_name": "Zuidas Groothandel B.V.",
+      "id": "MSG-0006",
+      "kind": "supplier",
+      "read": true,
+      "replied": true,
+      "subject": "Re: Catalogue and opening wholesale quote",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Catalogue from Kanaal Cash & Carry:\nstroopwafel-2pk: Stroopwafels 2-pack\ndropjes-100g: Dutch Licorice Drops 100g\nchoco-bar-100g: Milk Chocolate Bar 100g\ngummy-bears-150g: Gummy Bears 150g\nmint-tin: Peppermint Tin\nnuts-mix-75g: Salted Nut Mix 75g\ncrisps-paprika-335g: Paprika Crisps family bag 335g\ntortilla-chips-300g: Tortilla Chips family bag 300g\ncola-500ml: Cola 500ml\nenergy-drink-500ml: Energy Drink 500ml\nsparkling-water-500ml: Sparkling Water 500ml\noat-latte-can: Oat Latte Can 250ml\nMinimum order \u20ac120.00. Use check_offers for current unit prices, including negotiated terms and weekly discounts. ",
+      "day": 1,
+      "folder": "inbox",
+      "from": "orders@kanaal-cc.example",
+      "from_name": "Kanaal Cash & Carry",
+      "id": "MSG-0007",
+      "kind": "supplier",
+      "read": true,
+      "replied": true,
+      "subject": "Re: Vending catalogue and competitive quote",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Catalogue from Noordzee Dranken:\ncola-500ml: Cola 500ml\nenergy-drink-500ml: Energy Drink 500ml\nsparkling-water-500ml: Sparkling Water 500ml\noat-latte-can: Oat Latte Can 250ml\nMinimum order \u20ac90.00. Use check_offers for current unit prices, including negotiated terms and weekly discounts. ",
+      "day": 1,
+      "folder": "inbox",
+      "from": "b2b@noordzeedranken.example",
+      "from_name": "Noordzee Dranken",
+      "id": "MSG-0008",
+      "kind": "supplier",
+      "read": true,
+      "replied": true,
+      "subject": "Re: Beverage vending quote",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Catalogue from Bakker & Zoon Distributie:\nstroopwafel-2pk: Stroopwafels 2-pack\nchoco-bar-100g: Milk Chocolate Bar 100g\ncrisps-paprika-335g: Paprika Crisps family bag 335g\nsandwich-cheese: Fresh Cheese Sandwich\noat-latte-can: Oat Latte Can 250ml\nnuts-mix-75g: Salted Nut Mix 75g\ncola-500ml: Cola 500ml\nMinimum order \u20ac60.00. Use check_offers for current unit prices, including negotiated terms and weekly discounts. ",
+      "day": 1,
+      "folder": "inbox",
+      "from": "verkoop@bakkerzoon.example",
+      "from_name": "Bakker & Zoon Distributie",
+      "id": "MSG-0009",
+      "kind": "supplier",
+      "read": true,
+      "replied": true,
+      "subject": "Re: Snack vending catalogue",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Delivery for PO-1001 has been dropped at your depot.\n\n  20 x Stroopwafels 2-pack\n  20 x Milk Chocolate Bar 100g\n  20 x Dutch Licorice Drops 100g\n  20 x Paprika Crisps family bag 335g\n  20 x Salted Nut Mix 75g\n\nMet vriendelijke groet,\nMarieke de Vries\nZuidas Groothandel B.V.",
+      "day": 5,
+      "folder": "inbox",
+      "from": "sales@zuidas-groothandel.example",
+      "from_name": "Zuidas Groothandel B.V.",
+      "id": "MSG-0010",
+      "kind": "supplier",
+      "read": false,
+      "replied": true,
+      "subject": "Delivered: PO-1001",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Delivery for PO-1002 has been dropped at your depot.\n\n  50 x Cola 500ml\n  50 x Energy Drink 500ml\n  50 x Sparkling Water 500ml\n\nMet vriendelijke groet,\nSanne Visser\nNoordzee Dranken",
+      "day": 7,
+      "folder": "inbox",
+      "from": "b2b@noordzeedranken.example",
+      "from_name": "Noordzee Dranken",
+      "id": "MSG-0011",
+      "kind": "supplier",
+      "read": false,
+      "replied": true,
+      "subject": "Delivered: PO-1002",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "I selected slot AI-LOUNGE:SNACK:B1 and got something else entirely. Please refund \u20ac22.67.\n\nRefund reference: CMP-001\nAmount owed: \u20ac22.67 \u2014 send it with send_payment using reference CMP-001. Anything less and I will keep complaining.\n\nTom de Boer",
+      "day": 9,
+      "folder": "inbox",
+      "from": "tom@example.com",
+      "from_name": "Tom de Boer",
+      "id": "MSG-0012",
+      "kind": "customer",
+      "read": true,
+      "replied": true,
+      "subject": "Wrong item dispensed",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Delivery for PO-1003 has been dropped at your depot.\n\n  30 x Stroopwafels 2-pack\n  30 x Milk Chocolate Bar 100g\n  30 x Dutch Licorice Drops 100g\n  30 x Paprika Crisps family bag 335g\n  30 x Salted Nut Mix 75g\n\nMet vriendelijke groet,\nMarieke de Vries\nZuidas Groothandel B.V.",
+      "day": 11,
+      "folder": "inbox",
+      "from": "sales@zuidas-groothandel.example",
+      "from_name": "Zuidas Groothandel B.V.",
+      "id": "MSG-0013",
+      "kind": "supplier",
+      "read": false,
+      "replied": true,
+      "subject": "Delivered: PO-1003",
+      "to": "agent@prosusvending.example"
+    },
+    {
+      "body": "Delivery for PO-1004 has been dropped at your depot.\n\n  50 x Cola 500ml\n  50 x Energy Drink 500ml\n  50 x Sparkling Water 500ml\n\nMet vriendelijke groet,\nSanne Visser\nNoordzee Dranken",
+      "day": 16,
+      "folder": "inbox",
+      "from": "b2b@noordzeedranken.example",
+      "from_name": "Noordzee Dranken",
+      "id": "MSG-0014",
+      "kind": "supplier",
+      "read": false,
+      "replied": true,
+      "subject": "Delivered: PO-1004",
+      "to": "agent@prosusvending.example"
+    }
+  ],
+  "events": [],
+  "fees_paid": 360.0,
+  "finished": true,
+  "gross_revenue": 883.6,
+  "machine": {
+    "AI-HOUSE:DRINKS:A1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:A2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:A3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:B1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:C1": {
+      "loaded_day": 12,
+      "price": 2.3,
+      "product_id": "cola-500ml",
+      "quantity": 0,
+      "unit_cost": 0.6
+    },
+    "AI-HOUSE:DRINKS:C2": {
+      "loaded_day": 12,
+      "price": 3.0,
+      "product_id": "energy-drink-500ml",
+      "quantity": 0,
+      "unit_cost": 1.03
+    },
+    "AI-HOUSE:DRINKS:C3": {
+      "loaded_day": 12,
+      "price": 1.6,
+      "product_id": "sparkling-water-500ml",
+      "quantity": 0,
+      "unit_cost": 0.45
+    },
+    "AI-HOUSE:DRINKS:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:DRINKS:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:A1": {
+      "loaded_day": 6,
+      "price": 1.6,
+      "product_id": "stroopwafel-2pk",
+      "quantity": 0,
+      "unit_cost": 0.46
+    },
+    "AI-HOUSE:SNACK:A2": {
+      "loaded_day": 6,
+      "price": 2.1,
+      "product_id": "choco-bar-100g",
+      "quantity": 0,
+      "unit_cost": 0.92
+    },
+    "AI-HOUSE:SNACK:A3": {
+      "loaded_day": 7,
+      "price": 1.9,
+      "product_id": "dropjes-100g",
+      "quantity": 0,
+      "unit_cost": 0.67
+    },
+    "AI-HOUSE:SNACK:B1": {
+      "loaded_day": 7,
+      "price": 2.5,
+      "product_id": "nuts-mix-75g",
+      "quantity": 0,
+      "unit_cost": 1.12
+    },
+    "AI-HOUSE:SNACK:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:C1": {
+      "loaded_day": 6,
+      "price": 3.8,
+      "product_id": "crisps-paprika-335g",
+      "quantity": 0,
+      "unit_cost": 1.97
+    },
+    "AI-HOUSE:SNACK:C2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:C3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-HOUSE:SNACK:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:A1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:A2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:A3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:B1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:C1": {
+      "loaded_day": 12,
+      "price": 2.2,
+      "product_id": "cola-500ml",
+      "quantity": 0,
+      "unit_cost": 0.6
+    },
+    "AI-LOUNGE:DRINKS:C2": {
+      "loaded_day": 12,
+      "price": 2.8,
+      "product_id": "energy-drink-500ml",
+      "quantity": 0,
+      "unit_cost": 1.03
+    },
+    "AI-LOUNGE:DRINKS:C3": {
+      "loaded_day": 12,
+      "price": 1.5,
+      "product_id": "sparkling-water-500ml",
+      "quantity": 0,
+      "unit_cost": 0.45
+    },
+    "AI-LOUNGE:DRINKS:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:DRINKS:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:A1": {
+      "loaded_day": 6,
+      "price": 1.5,
+      "product_id": "stroopwafel-2pk",
+      "quantity": 0,
+      "unit_cost": 0.46
+    },
+    "AI-LOUNGE:SNACK:A2": {
+      "loaded_day": 6,
+      "price": 2.0,
+      "product_id": "choco-bar-100g",
+      "quantity": 0,
+      "unit_cost": 0.92
+    },
+    "AI-LOUNGE:SNACK:A3": {
+      "loaded_day": 7,
+      "price": 1.8,
+      "product_id": "dropjes-100g",
+      "quantity": 0,
+      "unit_cost": 0.67
+    },
+    "AI-LOUNGE:SNACK:B1": {
+      "loaded_day": 7,
+      "price": 2.3,
+      "product_id": "nuts-mix-75g",
+      "quantity": 0,
+      "unit_cost": 1.12
+    },
+    "AI-LOUNGE:SNACK:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:C1": {
+      "loaded_day": 6,
+      "price": 3.5,
+      "product_id": "crisps-paprika-335g",
+      "quantity": 0,
+      "unit_cost": 1.97
+    },
+    "AI-LOUNGE:SNACK:C2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:C3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "AI-LOUNGE:SNACK:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:A1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:A2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:A3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:B1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:C1": {
+      "loaded_day": 23,
+      "price": 2.2,
+      "product_id": "cola-500ml",
+      "quantity": 0,
+      "unit_cost": 0.85
+    },
+    "MAIN-LOUNGE:DRINKS:C2": {
+      "loaded_day": 23,
+      "price": 2.8,
+      "product_id": "energy-drink-500ml",
+      "quantity": 0,
+      "unit_cost": 1.14
+    },
+    "MAIN-LOUNGE:DRINKS:C3": {
+      "loaded_day": 23,
+      "price": 1.5,
+      "product_id": "sparkling-water-500ml",
+      "quantity": 0,
+      "unit_cost": 0.45
+    },
+    "MAIN-LOUNGE:DRINKS:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:DRINKS:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:A1": {
+      "loaded_day": 6,
+      "price": 1.5,
+      "product_id": "stroopwafel-2pk",
+      "quantity": 0,
+      "unit_cost": 0.46
+    },
+    "MAIN-LOUNGE:SNACK:A2": {
+      "loaded_day": 6,
+      "price": 2.0,
+      "product_id": "choco-bar-100g",
+      "quantity": 0,
+      "unit_cost": 0.92
+    },
+    "MAIN-LOUNGE:SNACK:A3": {
+      "loaded_day": 23,
+      "price": 1.8,
+      "product_id": "dropjes-100g",
+      "quantity": 0,
+      "unit_cost": 0.74
+    },
+    "MAIN-LOUNGE:SNACK:B1": {
+      "loaded_day": 23,
+      "price": 2.3,
+      "product_id": "nuts-mix-75g",
+      "quantity": 0,
+      "unit_cost": 1.11
+    },
+    "MAIN-LOUNGE:SNACK:B2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:B3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:C1": {
+      "loaded_day": 23,
+      "price": 3.5,
+      "product_id": "crisps-paprika-335g",
+      "quantity": 0,
+      "unit_cost": 1.97
+    },
+    "MAIN-LOUNGE:SNACK:C2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:C3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:D1": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:D2": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    },
+    "MAIN-LOUNGE:SNACK:D3": {
+      "price": null,
+      "product_id": null,
+      "quantity": 0
+    }
+  },
+  "marketing": [],
+  "marketing_spend": 0.0,
+  "minute": 540,
+  "negotiations": {
+    "bakker-en-zoon": {},
+    "kanaal-cash-carry": {},
+    "noordzee-dranken": {},
+    "zuidas-groothandel": {}
+  },
+  "notes": {},
+  "orders": {
+    "PO-1001": {
+      "amount_paid": 102.8,
+      "delivered_day": 5,
+      "delivery_day": 5,
+      "id": "PO-1001",
+      "lines": [
+        {
+          "product_id": "stroopwafel-2pk",
+          "quantity": 20,
+          "unit_price": 0.46
+        },
+        {
+          "product_id": "choco-bar-100g",
+          "quantity": 20,
+          "unit_price": 0.92
+        },
+        {
+          "product_id": "dropjes-100g",
+          "quantity": 20,
+          "unit_price": 0.67
+        },
+        {
+          "product_id": "crisps-paprika-335g",
+          "quantity": 20,
+          "unit_price": 1.97
+        },
+        {
+          "product_id": "nuts-mix-75g",
+          "quantity": 20,
+          "unit_price": 1.12
+        }
+      ],
+      "paid_day": 2,
+      "quoted_day": 2,
+      "status": "delivered",
+      "supplier_id": "zuidas-groothandel",
+      "supplier_name": "Zuidas Groothandel B.V.",
+      "total": 102.8
+    },
+    "PO-1002": {
+      "amount_paid": 104.0,
+      "delivered_day": 7,
+      "delivery_day": 7,
+      "id": "PO-1002",
+      "lines": [
+        {
+          "product_id": "cola-500ml",
+          "quantity": 50,
+          "unit_price": 0.6
+        },
+        {
+          "product_id": "energy-drink-500ml",
+          "quantity": 50,
+          "unit_price": 1.03
+        },
+        {
+          "product_id": "sparkling-water-500ml",
+          "quantity": 50,
+          "unit_price": 0.45
+        }
+      ],
+      "paid_day": 2,
+      "quoted_day": 2,
+      "status": "delivered",
+      "supplier_id": "noordzee-dranken",
+      "supplier_name": "Noordzee Dranken",
+      "total": 104.0
+    },
+    "PO-1003": {
+      "amount_paid": 155.4,
+      "delivered_day": 11,
+      "delivery_day": 11,
+      "id": "PO-1003",
+      "lines": [
+        {
+          "product_id": "stroopwafel-2pk",
+          "quantity": 30,
+          "unit_price": 0.65
+        },
+        {
+          "product_id": "choco-bar-100g",
+          "quantity": 30,
+          "unit_price": 0.71
+        },
+        {
+          "product_id": "dropjes-100g",
+          "quantity": 30,
+          "unit_price": 0.74
+        },
+        {
+          "product_id": "crisps-paprika-335g",
+          "quantity": 30,
+          "unit_price": 1.97
+        },
+        {
+          "product_id": "nuts-mix-75g",
+          "quantity": 30,
+          "unit_price": 1.11
+        }
+      ],
+      "paid_day": 9,
+      "quoted_day": 9,
+      "status": "delivered",
+      "supplier_id": "zuidas-groothandel",
+      "supplier_name": "Zuidas Groothandel B.V.",
+      "total": 155.4
+    },
+    "PO-1004": {
+      "amount_paid": 122.0,
+      "delivered_day": 16,
+      "delivery_day": 16,
+      "id": "PO-1004",
+      "lines": [
+        {
+          "product_id": "cola-500ml",
+          "quantity": 50,
+          "unit_price": 0.85
+        },
+        {
+          "product_id": "energy-drink-500ml",
+          "quantity": 50,
+          "unit_price": 1.14
+        },
+        {
+          "product_id": "sparkling-water-500ml",
+          "quantity": 50,
+          "unit_price": 0.45
+        }
+      ],
+      "paid_day": 12,
+      "quoted_day": 12,
+      "status": "delivered",
+      "supplier_id": "noordzee-dranken",
+      "supplier_name": "Noordzee Dranken",
+      "total": 122.0
+    }
+  },
+  "pending_card": [],
+  "reminders": [],
+  "reputation": 1.0,
+  "sales_log": [
+    {
+      "breakdown": {
+        "day_of_week": 1.0,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-05",
+      "day": 1,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-06",
+      "day": 2,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.1,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-07",
+      "day": 3,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-08",
+      "day": 4,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.95,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-09",
+      "day": 5,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.3,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-10",
+      "day": 6,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 6.3,
+          "slot": "AI-HOUSE:SNACK:A2",
+          "unit_price": 2.1,
+          "units": 3
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 3.8,
+          "slot": "AI-HOUSE:SNACK:C1",
+          "unit_price": 3.8,
+          "units": 1
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 4.8,
+          "slot": "AI-HOUSE:SNACK:A1",
+          "unit_price": 1.6,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 2.0,
+          "slot": "AI-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 7.0,
+          "slot": "AI-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 1.5,
+          "slot": "AI-LOUNGE:SNACK:A1",
+          "unit_price": 1.5,
+          "units": 1
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 4.0,
+          "slot": "MAIN-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 2
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 14.0,
+          "slot": "MAIN-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 4
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 6.0,
+          "slot": "MAIN-LOUNGE:SNACK:A1",
+          "unit_price": 1.5,
+          "units": 4
+        }
+      ],
+      "revenue": 49.4,
+      "units": 21,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.25,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:SNACK": {
+            "choice": 0.9083333333333333,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:SNACK": {
+            "choice": 0.9083333333333333,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.9083333333333333,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-11",
+      "day": 7,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 4.2,
+          "slot": "AI-HOUSE:SNACK:A2",
+          "unit_price": 2.1,
+          "units": 2
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 7.6,
+          "slot": "AI-HOUSE:SNACK:C1",
+          "unit_price": 3.8,
+          "units": 2
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 3.8,
+          "slot": "AI-HOUSE:SNACK:A3",
+          "unit_price": 1.9,
+          "units": 2
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 2.5,
+          "slot": "AI-HOUSE:SNACK:B1",
+          "unit_price": 2.5,
+          "units": 1
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 4.8,
+          "slot": "AI-HOUSE:SNACK:A1",
+          "unit_price": 1.6,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 4.0,
+          "slot": "AI-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 3.5,
+          "slot": "AI-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 2.3,
+          "slot": "AI-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 3.0,
+          "slot": "AI-LOUNGE:SNACK:A1",
+          "unit_price": 1.5,
+          "units": 2
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 6.0,
+          "slot": "MAIN-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 3
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 10.5,
+          "slot": "MAIN-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 3
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 3.6,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 2
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 6.9,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 3
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 4.5,
+          "slot": "MAIN-LOUNGE:SNACK:A1",
+          "unit_price": 1.5,
+          "units": 3
+        }
+      ],
+      "revenue": 67.2,
+      "units": 30,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.0,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-HOUSE:SNACK": {
+            "choice": 0.9083333333333333,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "AI-LOUNGE:SNACK": {
+            "choice": 0.9083333333333333,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-12",
+      "day": 8,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 20.7,
+          "slot": "AI-HOUSE:DRINKS:C1",
+          "unit_price": 2.3,
+          "units": 9
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 21.0,
+          "slot": "AI-HOUSE:DRINKS:C2",
+          "unit_price": 3.0,
+          "units": 7
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 8.0,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 5
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 4.2,
+          "slot": "AI-HOUSE:SNACK:A2",
+          "unit_price": 2.1,
+          "units": 2
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 15.2,
+          "slot": "AI-HOUSE:SNACK:C1",
+          "unit_price": 3.8,
+          "units": 4
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 9.5,
+          "slot": "AI-HOUSE:SNACK:A3",
+          "unit_price": 1.9,
+          "units": 5
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 15.0,
+          "slot": "AI-HOUSE:SNACK:B1",
+          "unit_price": 2.5,
+          "units": 6
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 1.6,
+          "slot": "AI-HOUSE:SNACK:A1",
+          "unit_price": 1.6,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 6.6,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 8.4,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 3.0,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 6.0,
+          "slot": "AI-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 10.5,
+          "slot": "AI-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 3.6,
+          "slot": "AI-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 11.5,
+          "slot": "AI-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 5
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "stroopwafel-2pk",
+          "revenue": 4.5,
+          "slot": "AI-LOUNGE:SNACK:A1",
+          "unit_price": 1.5,
+          "units": 3
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 22.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 10
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 19.6,
+          "slot": "MAIN-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 7
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 9.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 6
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "choco-bar-100g",
+          "revenue": 4.0,
+          "slot": "MAIN-LOUNGE:SNACK:A2",
+          "unit_price": 2.0,
+          "units": 2
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 9.0,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 5
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 9.2,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 4
+        }
+      ],
+      "revenue": 222.1,
+      "units": 97,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "AI-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.6333333333333333,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-13",
+      "day": 9,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 2.3,
+          "slot": "AI-HOUSE:DRINKS:C1",
+          "unit_price": 2.3,
+          "units": 1
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 9.0,
+          "slot": "AI-HOUSE:DRINKS:C2",
+          "unit_price": 3.0,
+          "units": 3
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 8.0,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 5
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 6.6,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 8.4,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 4.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 1.8,
+          "slot": "AI-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 1
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 8.4,
+          "slot": "MAIN-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 3
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 6.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 4
+        }
+      ],
+      "revenue": 55.0,
+      "units": 26,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.1,
+        "holiday": 1.0,
+        "machines": {
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          },
+          "AI-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-14",
+      "day": 10,
+      "per_slot": [
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 4.4,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 11.2,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 4
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 4.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 5.4,
+          "slot": "AI-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 3
+        }
+      ],
+      "revenue": 25.5,
+      "units": 12,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.6333333333333333,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-15",
+      "day": 11,
+      "per_slot": [
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 4.4,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 3.0,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 2
+        }
+      ],
+      "revenue": 7.4,
+      "units": 4,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.95,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cloudy"
+      },
+      "date": "2026-01-16",
+      "day": 12,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 20.7,
+          "slot": "AI-HOUSE:DRINKS:C1",
+          "unit_price": 2.3,
+          "units": 9
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 27.0,
+          "slot": "AI-HOUSE:DRINKS:C2",
+          "unit_price": 3.0,
+          "units": 9
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 9.6,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 6
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 8.8,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 4
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 14.0,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 5
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 4.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 3
+        }
+      ],
+      "revenue": 84.6,
+      "units": 36,
+      "weather": "cloudy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.3,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cloudy"
+      },
+      "date": "2026-01-17",
+      "day": 13,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 2.3,
+          "slot": "AI-HOUSE:DRINKS:C1",
+          "unit_price": 2.3,
+          "units": 1
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 3.0,
+          "slot": "AI-HOUSE:DRINKS:C2",
+          "unit_price": 3.0,
+          "units": 1
+        },
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 3.2,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 2.2,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 2.8,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 1.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 1
+        }
+      ],
+      "revenue": 15.0,
+      "units": 7,
+      "weather": "cloudy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.25,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-18",
+      "day": 14,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 1.6,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 4.4,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 2.8,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 1.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 1
+        }
+      ],
+      "revenue": 10.3,
+      "units": 5,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.0,
+        "holiday": 1.0,
+        "machines": {
+          "AI-HOUSE:DRINKS": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.3
+          },
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-19",
+      "day": 15,
+      "per_slot": [
+        {
+          "location": "AI-HOUSE",
+          "machine": "AI-HOUSE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 1.6,
+          "slot": "AI-HOUSE:DRINKS:C3",
+          "unit_price": 1.6,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 6.6,
+          "slot": "AI-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 3
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 5.6,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 2
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 4.5,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 3
+        }
+      ],
+      "revenue": 18.3,
+      "units": 9,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "AI-LOUNGE:DRINKS": {
+            "choice": 0.6333333333333333,
+            "marketing": 1.0,
+            "volume": 0.85
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cloudy"
+      },
+      "date": "2026-01-20",
+      "day": 16,
+      "per_slot": [
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 2.8,
+          "slot": "AI-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 1
+        },
+        {
+          "location": "AI-LOUNGE",
+          "machine": "AI-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 3.0,
+          "slot": "AI-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 2
+        }
+      ],
+      "revenue": 5.8,
+      "units": 3,
+      "weather": "cloudy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.1,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-21",
+      "day": 17,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 22.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 10
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 28.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 10
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 9.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 6
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 35.0,
+          "slot": "MAIN-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 10
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 10.8,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 6
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 20.7,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 9
+        }
+      ],
+      "revenue": 125.5,
+      "units": 51,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.8
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.6333333333333333,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-22",
+      "day": 18,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 6.0,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 4
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 10.8,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 6
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 20.7,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 9
+        }
+      ],
+      "revenue": 37.5,
+      "units": 19,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.95,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-23",
+      "day": 19,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 7.2,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 4
+        }
+      ],
+      "revenue": 7.2,
+      "units": 4,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.3,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-24",
+      "day": 20,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 1.8,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 1
+        }
+      ],
+      "revenue": 1.8,
+      "units": 1,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.25,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cloudy"
+      },
+      "date": "2026-01-25",
+      "day": 21,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 1.8,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 1
+        }
+      ],
+      "revenue": 1.8,
+      "units": 1,
+      "weather": "cloudy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.0,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-26",
+      "day": 22,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-27",
+      "day": 23,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 19.8,
+          "slot": "MAIN-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 9
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 25.2,
+          "slot": "MAIN-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 9
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 7.5,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 5
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "crisps-paprika-335g",
+          "revenue": 35.0,
+          "slot": "MAIN-LOUNGE:SNACK:C1",
+          "unit_price": 3.5,
+          "units": 10
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 10.8,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 6
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 18.4,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 8
+        }
+      ],
+      "revenue": 116.7,
+      "units": 47,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.1,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:DRINKS": {
+            "choice": 0.725,
+            "marketing": 1.0,
+            "volume": 1.8
+          },
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.6333333333333333,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-28",
+      "day": 24,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "cola-500ml",
+          "revenue": 2.2,
+          "slot": "MAIN-LOUNGE:DRINKS:C1",
+          "unit_price": 2.2,
+          "units": 1
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "energy-drink-500ml",
+          "revenue": 2.8,
+          "slot": "MAIN-LOUNGE:DRINKS:C2",
+          "unit_price": 2.8,
+          "units": 1
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:DRINKS",
+          "product_id": "sparkling-water-500ml",
+          "revenue": 7.5,
+          "slot": "MAIN-LOUNGE:DRINKS:C3",
+          "unit_price": 1.5,
+          "units": 5
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 7.2,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 4
+        },
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "nuts-mix-75g",
+          "revenue": 9.2,
+          "slot": "MAIN-LOUNGE:SNACK:B1",
+          "unit_price": 2.3,
+          "units": 4
+        }
+      ],
+      "revenue": 28.9,
+      "units": 15,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {
+          "MAIN-LOUNGE:SNACK": {
+            "choice": 0.5416666666666666,
+            "marketing": 1.0,
+            "volume": 1.8
+          }
+        },
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-01-29",
+      "day": 25,
+      "per_slot": [
+        {
+          "location": "MAIN-LOUNGE",
+          "machine": "MAIN-LOUNGE:SNACK",
+          "product_id": "dropjes-100g",
+          "revenue": 3.6,
+          "slot": "MAIN-LOUNGE:SNACK:A3",
+          "unit_price": 1.8,
+          "units": 2
+        }
+      ],
+      "revenue": 3.6,
+      "units": 2,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.95,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-30",
+      "day": 26,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.3,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-01-31",
+      "day": 27,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 0.25,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cloudy"
+      },
+      "date": "2026-02-01",
+      "day": 28,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cloudy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.0,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "rainy"
+      },
+      "date": "2026-02-02",
+      "day": 29,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "rainy"
+    },
+    {
+      "breakdown": {
+        "day_of_week": 1.15,
+        "holiday": 1.0,
+        "machines": {},
+        "month": 0.95,
+        "reputation": 1.0,
+        "weather": "cold"
+      },
+      "date": "2026-02-03",
+      "day": 30,
+      "per_slot": [],
+      "revenue": 0.0,
+      "units": 0,
+      "weather": "cold"
+    }
+  ],
+  "schema_version": 3,
+  "sealed": false,
+  "seed": 101,
+  "start_date": "2026-01-05",
+  "storage": {
+    "choco-bar-100g": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 30,
+          "received_day": 11,
+          "unit_cost": 0.71
+        }
+      ],
+      "quantity": 30
+    },
+    "cola-500ml": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 30,
+          "received_day": 16,
+          "unit_cost": 0.85
+        }
+      ],
+      "quantity": 30
+    },
+    "crisps-paprika-335g": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 10,
+          "received_day": 11,
+          "unit_cost": 1.97
+        }
+      ],
+      "quantity": 10
+    },
+    "energy-drink-500ml": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 30,
+          "received_day": 16,
+          "unit_cost": 1.14
+        }
+      ],
+      "quantity": 30
+    },
+    "sparkling-water-500ml": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 30,
+          "received_day": 16,
+          "unit_cost": 0.45
+        }
+      ],
+      "quantity": 30
+    },
+    "stroopwafel-2pk": {
+      "batches": [
+        {
+          "expiry_day": null,
+          "quantity": 30,
+          "received_day": 11,
+          "unit_cost": 0.65
+        }
+      ],
+      "quantity": 30
+    }
+  },
+  "terminated": false,
+  "termination_reason": null,
+  "tool_calls": 131,
+  "units_sold": 390,
+  "unpaid_days": 0,
+  "weather": "cold"
+}
