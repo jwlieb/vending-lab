@@ -1,0 +1,9 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "seed": 101,
+  "turns": 190,
+  "day": 30,
+  "tool_calls": 478,
+  "api_cost_usd": 0.3473442999999996,
+  "runtime_seconds": 429.0818289159797
+}

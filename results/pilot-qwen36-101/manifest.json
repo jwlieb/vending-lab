@@ -1,0 +1,14 @@
+{
+  "models": [
+    "qwen/qwen3.6-35b-a3b"
+  ],
+  "seeds": [
+    101
+  ],
+  "days": 30,
+  "total_budget_usd": 6.0,
+  "per_run_budget_usd": 6.0,
+  "trials": 1,
+  "source_sha256": "87d6f1fce88b511e1e32ec57620ac37a50402ac0bfa137093c3e5ebca317c90f",
+  "started_at": "2026-09-22T23:19:47Z"
+}
